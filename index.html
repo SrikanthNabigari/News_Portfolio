@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+    <title>Portfolio Project</title>
+</head>
+<body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="#">
+        <img src="images/logo.png" class="header_logo" alt="News Portfolio logo">
+        </a>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <!-- navigation bar coded here -->
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">Tech</a></li>
+        <li class="nav__item"><a href="#">Reviews</a></li>
+        <li class="nav__item"><a href="#">Articles</a></li>
+        <li class="nav__item"><a href="#">Science</a></li>
+        <li class="nav__item"><a href="#">others</a></li>
+      </ul>
+    </nav>
+
+    <!-- main trending topic goes here -->
+
+    <section class="content">
+        <section class="hero" >
+            <article class="description">
+                <h2>
+                    Iphone 7 is the gorgeous mobile with sacrifices
+                </h2>
+                <p>
+                    Apple removed the headphone jack in its latest iphone mobiles.
+                </p>
+            </article>
+        </section>
+    </section>
+    <!-- latest news section coded here -->
+    <section id="latest_topics">
+        <h2>Latest News</h2>
+        <div class="container">
+        <div class="box bA">
+            <a href="#">
+                <div class="bx bAd">
+                <span>
+                    Samsung Galaxy Note 7 can be the biggest disaster in the year 2016 of Technology.
+                </span>
+                </div>
+            </a>
+        </div>
+            <div class="box bB">
+                <div class="box b1">
+                    <a href="#">
+                        <div class="bx bBd1">
+                        <span>
+                            Apple watch 2 is a water resistent with double the proessing from original apple watch
+                        </span>
+                        </div>
+                    </a>
+                </div>
+                 <div class="box b2">
+                     <a href="#">
+                        <div class="bx bBd2">
+                        <span>
+                            LG V20 is the first mobile releasing with Android Noughat OS.
+                        </span>
+                        </div>
+                    </a>
+                 </div>
+            </div>
+           
+            <div class="box bC">
+                <div class="box b3">
+                    <a href="#">
+                        <div class="bx bCd3">
+                        <span>
+                            Canon Released its next gen 5d mark 4 of its successor 5d mark 3 
+                        </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="box b4">
+                    <a href="#">
+                        <div class="bx bCd4">
+                        <span>
+                            Apple released its Weird looking wireless earphones with great technology.
+                        </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box bD">
+                <div class="box b5">
+                    <a href="#">
+                        <div class="bx bDd5">
+                        <span>
+                            Mr Robot series premiered with real computer hacks. 
+                        </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="box b6">
+                    <a href="#">
+                        <div class="bx bDd6">
+                        <span>
+                            Pokemon go made record breaking downloads in both Android and IOS
+                        </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer code -->
+    <footer class="footer">
+        <div class="grid">
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    <li>list 1</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Advertisements</li>
+                    <li>etcetera</li>
+                    <li>etcetera</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>list 2</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Advertisements</li>
+                    <li>etcetera</li>
+                    <li>etcetera</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>list 3</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Advertisements</li>
+                    <li>etcetera</li>
+                    <li>etcetera</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+         <div id="social">
+            <a href="#" class="zocial-twitter">Twitter</a>
+            <a href="#" class="zocial-facebook">Facebook</a>
+            <a href="#" class="zocial-googleplus">Google+</a>
+            <a href="#" class="zocial-digg">Digg</a>
+        </div>
+    </footer>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>
