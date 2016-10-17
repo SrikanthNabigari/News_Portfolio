@@ -309,6 +309,9 @@ footer li:first-of-type {
     .bD{
         width: 50%;
     }
+    footer .row{
+        width: 100%;
+    }
 }
 @media screen and (max-width:675px) {
     .header img{
