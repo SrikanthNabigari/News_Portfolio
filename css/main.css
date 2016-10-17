@@ -268,8 +268,7 @@ main {
     /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-300px, 0);
     transform: translate(-300px, 0);
-    /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
+    
   }
   .nav.open {
     -webkit-transform: translate(0, 0);
@@ -389,7 +388,7 @@ div#social a {
 div#social a:last-of-type {
   margin: 0;
 }
-li:first-of-type {
+footer li:first-of-type {
     color:red;
     font-size:1.8em;
 }
