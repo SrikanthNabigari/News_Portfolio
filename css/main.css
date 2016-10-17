@@ -311,6 +311,10 @@ footer li:first-of-type {
     }
     footer .row{
         width: 100%;
+        margin: auto;
+    }
+    .footer .row .col-4 {
+    width:30%;
     }
 }
 @media screen and (max-width:675px) {
@@ -395,6 +399,10 @@ footer li:first-of-type {
     }
     footer .row{
         width: 100%;
+        margin: auto;
+    }
+    .footer .row .col-4 {
+        width:30%;
     }
     
 }
